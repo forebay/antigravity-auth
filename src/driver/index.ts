@@ -260,7 +260,7 @@ const ACCOUNT_ROTATION_SETTINGS_GROUP = {
 } satisfies SettingsMenuGroup;
 
 // The rest of antigravity's own settings, unified into ONE schema shared by both the loader-TUI
-// settings menu (toSettingsGroups below) and Cairn's capabilities panel (toCapabilitiesFields, in
+// settings menu (toSettingsGroups below) and a dashboard's capabilities panel (toCapabilitiesFields, in
 // ../index.ts), so the two surfaces can't drift out of key-set sync. account_selection_strategy
 // (above) and the retry/backoff pair (RETRY_KEYS, via basekit/auth's provider-common) are shared with
 // every basekit auth provider, so they stay out of this schema and are composed back in separately by
