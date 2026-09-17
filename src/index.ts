@@ -11,7 +11,7 @@ setActivityEmitter((spec: ActivitySpec, source: string) => emitEvent(spec, sourc
 
 const README_SPEC = {
   description:
-    "Google Antigravity provider for OpenCode and Claude Code, built as a thin driver on top of [basekit/auth](https://github.com/intisy-ai/basekit). basekit/auth owns all the generic work (multi-account storage, selection/rotation, token refresh, and rate-limit/cooldown state) while this package supplies only the antigravity specifics: the request/response transform, the Cloud Code Assist endpoints, and the Google OAuth login. The same account pool is shared by both OpenCode and Claude Code.",
+    "Google Antigravity provider for OpenCode and Claude Code, built as a thin driver on top of [basekit/auth](https://github.com/forebay/basekit). basekit/auth owns all the generic work (multi-account storage, selection/rotation, token refresh, and rate-limit/cooldown state) while this package supplies only the antigravity specifics: the request/response transform, the Cloud Code Assist endpoints, and the Google OAuth login. The same account pool is shared by both OpenCode and Claude Code.",
   architecture: `flowchart TD
     subgraph Apps
         OC[OpenCode] -->|auth hook loader.fetch| HANDLE
